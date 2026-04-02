@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio — Super Core Solutions LLC</title>
+    <meta name="description" content="Production applications and projects by Super Core Solutions LLC. TrainBJJ iOS app, BrewRoute mobile ordering, and more.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container">
+            <a href="/" class="nav-brand">Super Core Solutions</a>
+            <ul class="nav-links">
+                <li class="nav-dropdown">
+                    <button class="nav-dropdown-toggle" aria-expanded="false">
+                        Services
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"/></svg>
+                    </button>
+                    <div class="nav-dropdown-menu">
+                        <a href="services/identity-automation.html">Identity & Automation</a>
+                        <a href="services/app-development.html">Application Development</a>
+                    </div>
+                </li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="nav-cta">Contact</a></li>
+            </ul>
+            <button class="nav-hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="nav-mobile">
+        <button class="mobile-services-toggle">Services</button>
+        <div class="mobile-services-submenu">
+            <a href="services/identity-automation.html">Identity & Automation</a>
+            <a href="services/app-development.html">Application Development</a>
+        </div>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Portfolio</h1>
+            <p class="subtitle">Production applications designed, built, and shipped</p>
+        </div>
+    </section>
+
+    <!-- TrainBJJ Case Study -->
+    <section class="section">
+        <div class="container">
+            <div class="card case-study fade-in">
+                <div class="portfolio-card-body">
+                    <div class="case-study-header">
+                        <h3>Train BJJ — iOS Training Tracker</h3>
+                        <div style="display: flex; align-items: center; gap: 12px;">
+                            <span class="portfolio-status live">Live on App Store</span>
+                        </div>
+                    </div>
+
+                    <div class="tech-pills">
+                        <span class="tech-pill">SwiftUI</span>
+                        <span class="tech-pill">Firebase</span>
+                        <span class="tech-pill">Cloud Functions</span>
+                        <span class="tech-pill">StoreKit 2</span>
+                        <span class="tech-pill">CloudKit</span>
+                        <span class="tech-pill">HealthKit</span>
+                        <span class="tech-pill">OpenAI</span>
+                        <span class="tech-pill">GitHub Pages</span>
+                    </div>
+
+                    <div class="case-study-story">
+                        <p>Train BJJ is a purpose-built iOS app for Brazilian Jiu-Jitsu practitioners to log training sessions, track techniques, and monitor progress over time. Built from the ground up as a production iOS application, leveraging AI-accelerated development for implementation while personally handling all architecture, Firebase backend configuration, App Store submission, subscription setup, and community beta testing with offer codes.</p>
+                    </div>
+
+                    <div class="demonstrates">
+                        <h4>What This Demonstrates</h4>
+                        <ul>
+                            <li>Full product lifecycle: concept, architecture, development, App Store approval, and post-launch iteration</li>
+                            <li>Firebase backend implementation with real-time data, authentication, and cloud functions</li>
+                            <li>StoreKit 2 subscription management with free trials, offer codes, and in-app purchase configuration</li>
+                            <li>AI-powered features via OpenAI integration through Firebase Cloud Functions</li>
+                            <li>Social features with feeds, training partner comparisons, and real-time notifications</li>
+                            <li>App Store Connect navigation: review process, privacy policies, and TestFlight distribution</li>
+                        </ul>
+                    </div>
+
+                    <div class="case-study-links" style="margin-top: 20px;">
+                        <a href="https://trainbjjapp.com" class="btn btn-outline" target="_blank" rel="noopener">Visit Website</a>
+                        <a href="https://apps.apple.com/us/app/train-bjj-jiujitsu-tracker/id6755694189" class="btn btn-primary" target="_blank" rel="noopener">View on App Store</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BrewRoute Case Study -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="card case-study fade-in">
+                <div class="portfolio-card-body">
+                    <div class="case-study-header">
+                        <h3>BrewRoute — Coffee Truck Mobile App</h3>
+                        <span class="portfolio-status dev">In Development</span>
+                    </div>
+
+                    <div class="tech-pills">
+                        <span class="tech-pill">React Native</span>
+                        <span class="tech-pill">Expo</span>
+                        <span class="tech-pill">Firebase</span>
+                        <span class="tech-pill">Toast POS</span>
+                        <span class="tech-pill">Google Maps</span>
+                        <span class="tech-pill">Cloud Functions</span>
+                    </div>
+
+                    <div class="case-study-story">
+                        <p>BrewRoute is a cross-platform mobile application being built for a local coffee truck business to manage customer ordering, route tracking, and engagement. The app integrates with Toast POS for seamless order management between the mobile experience and existing point-of-sale operations. Designed with a white-label SaaS architecture from day one, enabling future deployment to other mobile food service businesses.</p>
+                    </div>
+
+                    <div class="demonstrates">
+                        <h4>What This Demonstrates</h4>
+                        <ul>
+                            <li>Client-facing project work with real business requirements and stakeholder collaboration</li>
+                            <li>Cross-platform mobile development with React Native and Expo</li>
+                            <li>Third-party POS integration with the Toast API</li>
+                            <li>SaaS and white-label architecture thinking from the initial build</li>
+                            <li>Multi-role system: shop owners, drivers, and customers with role-based access</li>
+                            <li>Firebase backend for real-time ordering, route tracking, and data management</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Work -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>Additional Work</h2>
+            </div>
+            <div class="services-grid fade-in">
+                <div class="card service-card">
+                    <div class="card-icon">&#127760;</div>
+                    <h3>supercoresolutionsllc.com</h3>
+                    <p>This site — a multi-page marketing site built with modern HTML/CSS, responsive design, and deployed on GitHub Pages.</p>
+                </div>
+                <div class="card service-card">
+                    <div class="card-icon">&#127760;</div>
+                    <h3>trainbjjapp.com</h3>
+                    <p>Product marketing site for Train BJJ with feature showcases, belt-themed sections, and App Store download integration.</p>
+                    <a href="https://trainbjjapp.com" class="card-link" target="_blank" rel="noopener">
+                        Visit site
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L11.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 11-1.04-1.08l3.158-2.96H3.75A.75.75 0 013 10z" clip-rule="evenodd"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container fade-in">
+            <h2>Have a Project in Mind?</h2>
+            <p>Let's talk about what you're building.</p>
+            <a href="contact.html" class="btn">Get in Touch</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <div class="footer-brand">Super Core Solutions LLC</div>
+                    <p class="footer-tagline">Enterprise infrastructure and modern application development.</p>
+                </div>
+                <div class="footer-links-group">
+                    <h4>Services</h4>
+                    <a href="services/identity-automation.html">Identity & Automation</a>
+                    <a href="services/app-development.html">Application Development</a>
+                </div>
+                <div class="footer-links-group">
+                    <h4>Company</h4>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-links-group">
+                    <h4>Legal</h4>
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                    <a href="support.html">Support</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 Super Core Solutions LLC. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

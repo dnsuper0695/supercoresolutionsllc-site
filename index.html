@@ -3,8 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Super Core Solutions LLC</title>
-    <meta name="description" content="Super Core Solutions LLC — Mobile app development studio. Creators of Train BJJ, a training tracker for Brazilian Jiu-Jitsu athletes.">
+    <title>Super Core Solutions LLC — Enterprise Infrastructure & App Development</title>
+    <meta name="description" content="Enterprise identity infrastructure and AI-accelerated application development. 12+ years of Fortune 500 experience, shipped to the App Store.">
+    <meta property="og:title" content="Super Core Solutions LLC">
+    <meta property="og:description" content="Enterprise identity infrastructure and AI-accelerated application development.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://supercoresolutionsllc.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -12,90 +19,200 @@
     <!-- Navigation -->
     <nav class="nav">
         <div class="container">
-            <span class="nav-brand">Super Core Solutions</span>
+            <a href="/" class="nav-brand">Super Core Solutions</a>
             <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li class="nav-dropdown">
+                    <button class="nav-dropdown-toggle" aria-expanded="false">
+                        Services
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"/></svg>
+                    </button>
+                    <div class="nav-dropdown-menu">
+                        <a href="services/identity-automation.html">Identity & Automation</a>
+                        <a href="services/app-development.html">Application Development</a>
+                    </div>
+                </li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="nav-cta">Contact</a></li>
             </ul>
+            <button class="nav-hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </nav>
+
+    <!-- Mobile Nav -->
+    <div class="nav-mobile">
+        <button class="mobile-services-toggle">Services</button>
+        <div class="mobile-services-submenu">
+            <a href="services/identity-automation.html">Identity & Automation</a>
+            <a href="services/app-development.html">Application Development</a>
+        </div>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </div>
 
     <!-- Hero -->
     <section class="hero">
         <div class="container">
-            <h1>Super Core Solutions LLC</h1>
-            <p class="tagline">Building thoughtful apps for athletes</p>
+            <h1>Enterprise Infrastructure Meets Modern App Development</h1>
+            <p class="tagline">Senior engineering expertise across identity platforms, cloud automation, and production mobile applications. One engineer, two decades of impact.</p>
+            <div class="hero-ctas">
+                <a href="services/identity-automation.html" class="btn btn-primary">Infrastructure & Identity Services</a>
+                <a href="services/app-development.html" class="btn btn-outline">Application Development</a>
+            </div>
         </div>
     </section>
 
-    <!-- About -->
-    <section id="about" class="section">
+    <!-- Services Overview -->
+    <section class="section">
         <div class="container">
-            <h2 class="section-title">What We Do</h2>
-            <div class="about-grid">
-                <div class="about-item">
-                    <div class="icon">&#128241;</div>
-                    <h4>Mobile Apps</h4>
-                    <p>We design and develop native iOS applications focused on the athletic experience.</p>
+            <div class="section-header fade-in">
+                <h2>What We Do</h2>
+                <p class="section-subtitle">Two specialized service lines backed by 12+ years of enterprise experience</p>
+            </div>
+            <div class="services-grid">
+                <div class="card service-card fade-in">
+                    <div class="card-icon">&#128272;</div>
+                    <h3>Identity & Automation</h3>
+                    <p>Active Directory, Entra ID, Okta, SSO integrations, HR-to-identity lifecycle automation, PowerShell scripting, and Azure Infrastructure as Code.</p>
+                    <a href="services/identity-automation.html" class="card-link">
+                        Learn more
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L11.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 11-1.04-1.08l3.158-2.96H3.75A.75.75 0 013 10z" clip-rule="evenodd"/></svg>
+                    </a>
                 </div>
-                <div class="about-item">
-                    <div class="icon">&#129351;</div>
-                    <h4>Built for Athletes</h4>
-                    <p>Our products are built by practitioners, for practitioners — with real training workflows in mind.</p>
-                </div>
-                <div class="about-item">
-                    <div class="icon">&#128274;</div>
-                    <h4>Privacy First</h4>
-                    <p>Your training data stays yours. We never sell personal data or serve third-party ads.</p>
+                <div class="card service-card fade-in">
+                    <div class="card-icon">&#128187;</div>
+                    <h3>Application Development</h3>
+                    <p>iOS and cross-platform mobile apps, web applications, Firebase and cloud backends, API integrations, and AI-accelerated full-stack development.</p>
+                    <a href="services/app-development.html" class="card-link">
+                        Learn more
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L11.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 11-1.04-1.08l3.158-2.96H3.75A.75.75 0 013 10z" clip-rule="evenodd"/></svg>
+                    </a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Products -->
-    <section id="products" class="section">
+    <!-- Featured Work -->
+    <section class="section section-alt">
         <div class="container">
-            <h2 class="section-title">Our Products</h2>
-            <div class="card">
-                <span class="badge">iOS App</span>
-                <h3>Train BJJ — Jiujitsu Tracker</h3>
-                <p>
-                    Train BJJ is a comprehensive training companion for Brazilian Jiu-Jitsu athletes.
-                    Track sessions, log techniques, analyze your game with AI-powered insights,
-                    and connect with training partners — all in one app.
-                </p>
-                <p style="margin-top: 12px;">
-                    Features include live session tracking with Dynamic Island, a library of 150+ techniques,
-                    AI coaching, HealthKit integration, shareable session cards, and cross-device sync via iCloud.
-                </p>
-                <a href="https://apps.apple.com/app/train-bjj-jiujitsu-tracker/id6738895825" class="app-link">View on App Store</a>
+            <div class="section-header fade-in">
+                <h2>Featured Work</h2>
+                <p class="section-subtitle">Production applications designed, built, and shipped</p>
+            </div>
+            <div class="portfolio-grid">
+                <div class="card portfolio-card fade-in">
+                    <div class="portfolio-card-body">
+                        <div class="portfolio-card-header">
+                            <h3>Train BJJ</h3>
+                            <span class="portfolio-status live">Live</span>
+                        </div>
+                        <p class="description">A comprehensive iOS training companion for Brazilian Jiu-Jitsu athletes. Track sessions, analyze your game with AI-powered insights, and connect with training partners.</p>
+                        <div class="tech-pills">
+                            <span class="tech-pill">SwiftUI</span>
+                            <span class="tech-pill">Firebase</span>
+                            <span class="tech-pill">StoreKit 2</span>
+                            <span class="tech-pill">CloudKit</span>
+                            <span class="tech-pill">OpenAI</span>
+                        </div>
+                        <a href="portfolio.html" class="card-link">
+                            View case study
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L11.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 11-1.04-1.08l3.158-2.96H3.75A.75.75 0 013 10z" clip-rule="evenodd"/></svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="card portfolio-card fade-in">
+                    <div class="portfolio-card-body">
+                        <div class="portfolio-card-header">
+                            <h3>BrewRoute</h3>
+                            <span class="portfolio-status dev">In Development</span>
+                        </div>
+                        <p class="description">A cross-platform mobile app for a coffee truck business to manage customer ordering, route tracking, and Toast POS integration. Built with white-label SaaS architecture.</p>
+                        <div class="tech-pills">
+                            <span class="tech-pill">React Native</span>
+                            <span class="tech-pill">Expo</span>
+                            <span class="tech-pill">Firebase</span>
+                            <span class="tech-pill">Toast POS</span>
+                        </div>
+                        <a href="portfolio.html" class="card-link">
+                            View case study
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L11.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 11-1.04-1.08l3.158-2.96H3.75A.75.75 0 013 10z" clip-rule="evenodd"/></svg>
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact -->
-    <section id="contact" class="section">
+    <!-- Credibility Strip -->
+    <section class="section section-dark">
         <div class="container">
-            <h2 class="section-title">Contact</h2>
-            <div class="contact-info">
-                <p>Have a question or want to get in touch? Reach out anytime.</p>
-                <a href="mailto:Support@trainbjjapp.com" class="contact-email">Support@trainbjjapp.com</a>
+            <div class="credibility-strip fade-in">
+                <div class="credibility-item">
+                    <div class="credibility-icon">&#128188;</div>
+                    <span class="credibility-text">12+ Years Enterprise Experience</span>
+                </div>
+                <div class="credibility-item">
+                    <div class="credibility-icon">&#127963;</div>
+                    <span class="credibility-text">Fortune 500 & Healthcare</span>
+                </div>
+                <div class="credibility-item">
+                    <div class="credibility-icon">&#127891;</div>
+                    <span class="credibility-text">Microsoft Certified (SC-300, AZ-900)</span>
+                </div>
+                <div class="credibility-item">
+                    <div class="credibility-icon">&#128241;</div>
+                    <span class="credibility-text">Shipped to the App Store</span>
+                </div>
             </div>
+        </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta-section">
+        <div class="container fade-in">
+            <h2>Let's Build Something</h2>
+            <p>Whether you need identity infrastructure or a production application, let's talk about your project.</p>
+            <a href="contact.html" class="btn">Get in Touch</a>
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 Super Core Solutions LLC. All rights reserved.</p>
-            <div class="footer-links">
-                <a href="privacy.html">Privacy Policy</a>
-                <a href="terms.html">Terms of Service</a>
-                <a href="support.html">Support</a>
+            <div class="footer-content">
+                <div>
+                    <div class="footer-brand">Super Core Solutions LLC</div>
+                    <p class="footer-tagline">Enterprise infrastructure and modern application development.</p>
+                </div>
+                <div class="footer-links-group">
+                    <h4>Services</h4>
+                    <a href="services/identity-automation.html">Identity & Automation</a>
+                    <a href="services/app-development.html">Application Development</a>
+                </div>
+                <div class="footer-links-group">
+                    <h4>Company</h4>
+                    <a href="portfolio.html">Portfolio</a>
+                    <a href="about.html">About</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                <div class="footer-links-group">
+                    <h4>Legal</h4>
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                    <a href="support.html">Support</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2026 Super Core Solutions LLC. All rights reserved.
             </div>
         </div>
     </footer>
 
+    <script src="script.js"></script>
 </body>
 </html>
