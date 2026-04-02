@@ -1112,7 +1112,8 @@ img {
     .credibility-strip {
         gap: 24px;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
+        padding-left: 24px;
     }
 
     .section {
