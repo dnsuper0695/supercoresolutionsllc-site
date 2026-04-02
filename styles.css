@@ -88,6 +88,9 @@ img {
 }
 
 .nav-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     font-size: 1.1rem;
     font-weight: 700;
     color: var(--color-text);
@@ -96,6 +99,13 @@ img {
 
 .nav-brand:hover {
     color: var(--color-primary);
+}
+
+.nav-logo {
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    object-fit: cover;
 }
 
 .nav-links {
